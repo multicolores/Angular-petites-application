@@ -30,6 +30,9 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { TaskDialogComponent } from './componentsTodo/task-dialog/task-dialog.component';
+import { HeroesComponent } from './project-container/heroes/heroes.component';
+import { MessagesComponent } from './project-container/messages/messages.component';
+import { HeroDetailComponent } from './project-container/hero-detail/hero-detail/hero-detail.component';
 
 const firebaseConfig = {
   apiKey: "AIzaSyDb5GSZYtSasyn-sJUTn62jwh6zGkAMGZI",
@@ -51,7 +54,10 @@ const firebaseConfig = {
     ButtonComponent,
     TasksComponent,
     TaskItemComponent,
-    TaskDialogComponent
+    TaskDialogComponent,
+    HeroesComponent,
+    MessagesComponent,
+    HeroDetailComponent
   ],
   imports: [
     BrowserModule,
