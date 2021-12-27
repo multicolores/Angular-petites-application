@@ -1,0 +1,14 @@
+<h2>Détails du film</h2>
+<div class="container" *ngIf="film">
+    <div>
+        <h2>{{film.title}}</h2>
+        <p>{{film.release_date}}</p>
+        <!-- <span>{{film.id}}</span> -->
+        <img src={{film.movie_banner}} alt="image du film" srcset="">
+        <p>{{film.description}}</p>
+        <h3 routerLink="/films/">- Retour aux films -</h3>
+      </div>
+
+</div>
+
+<router-outlet></router-outlet>

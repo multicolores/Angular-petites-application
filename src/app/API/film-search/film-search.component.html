@@ -1,0 +1,23 @@
+<div id="search-component">
+    <label for="search-box">Film Search </label>
+    <input #searchBox id="search-box" (input)="search(searchBox.value)" />
+  
+    <!-- <ul class="search-result">
+      <li *ngFor="let film of films$ | async" >
+        <a routerLink="/filmdetail/{{film.id}}">
+          {{film.title}}
+        </a>
+      </li>
+    </ul> -->
+
+    <ul class="search-result" *ngIf="searchBox.value">
+        <div *ngFor="let film of films">
+            <li *ngIf="film.title.toLowerCase().includes(searchBox.value.toLowerCase( ))">
+                <a routerLink="/filmdetail/{{film.id}}">
+                  {{film.title}}
+                </a>
+              </li>
+        </div>
+
+      </ul>
+  </div>

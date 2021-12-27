@@ -1,0 +1,21 @@
+<h2>Les Films du studio</h2>
+<app-film-search></app-film-search>
+
+<div class="container" >
+  <div *ngFor="let film of films" (click)="selectedFilm(film.id)" routerLink="/filmdetail/{{film.id}}">
+    <h3>{{film.title}}</h3>
+    <!-- <span>{{film.id}}</span> -->
+    <img src={{film.image}} alt={{film.title}} srcset="">
+  </div>
+</div>
+
+<router-outlet></router-outlet>
+
+
+<!-- <ul class="heroes">
+  <li *ngFor="let film of films" class="badge">
+    <span class="badge">{{film.id}}</span> {{film.title}}
+    <img src={{film.image}} alt={{film.title}} srcset="">
+  </li>
+</ul> -->
+

@@ -33,6 +33,10 @@ import { TaskDialogComponent } from './componentsTodo/task-dialog/task-dialog.co
 import { HeroesComponent } from './project-container/heroes/heroes.component';
 import { MessagesComponent } from './project-container/messages/messages.component';
 import { HeroDetailComponent } from './project-container/hero-detail/hero-detail/hero-detail.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FilmsComponent } from './API/films/films.component';
+import { FilmDetailComponent } from './API/film-detail/film-detail.component';
+import { FilmSearchComponent } from './API/film-search/film-search.component';
 
 const firebaseConfig = {
   apiKey: "AIzaSyDb5GSZYtSasyn-sJUTn62jwh6zGkAMGZI",
@@ -57,10 +61,14 @@ const firebaseConfig = {
     TaskDialogComponent,
     HeroesComponent,
     MessagesComponent,
-    HeroDetailComponent
+    HeroDetailComponent,
+    FilmsComponent,
+    FilmDetailComponent,
+    FilmSearchComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     NbThemeModule.forRoot({ name: 'dark' }),
