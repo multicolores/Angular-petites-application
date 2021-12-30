@@ -25,10 +25,10 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { FormsModule } from '@angular/forms';
 
 import { environment } from 'src/environments/environment';
-import { AngularFireModule } from '@angular/fire';
-import { AngularFirestoreModule } from '@angular/fire/firestore';
-import { AngularFireStorageModule } from '@angular/fire/storage';
-import { AngularFireAuthModule } from '@angular/fire/auth';
+// import { AngularFireModule } from '@angular/fire';
+// import { AngularFirestoreModule } from '@angular/fire/firestore';
+// import { AngularFireStorageModule } from '@angular/fire/storage';
+// import { AngularFireAuthModule } from '@angular/fire/auth';
 import { TaskDialogComponent } from './componentsTodo/task-dialog/task-dialog.component';
 import { HeroesComponent } from './project-container/heroes/heroes.component';
 import { MessagesComponent } from './project-container/messages/messages.component';
@@ -81,18 +81,18 @@ const firebaseConfig = {
     MatDialogModule,
     MatButtonModule,
     DragDropModule,
-    AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule,
+    // AngularFireModule.initializeApp(environment.firebase),
+    // AngularFirestoreModule,
     // TaskDialogComponent,
     // TaskDialogResult,
 
     MatInputModule,
     FormsModule,
     FontAwesomeModule,
-    AngularFireModule.initializeApp(firebaseConfig),
-    AngularFirestoreModule, // firestore
-    AngularFireAuthModule, // auth
-    AngularFireStorageModule // storage
+    // AngularFireModule.initializeApp(firebaseConfig),
+    // AngularFirestoreModule, // firestore
+    // AngularFireAuthModule, // auth
+    // AngularFireStorageModule // storage
     
   ],
   providers: [],
