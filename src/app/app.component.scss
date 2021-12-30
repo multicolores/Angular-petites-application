@@ -5,3 +5,21 @@ section {
 .active {
   color: rgba(197, 59, 34, 0.781) !important;
 }
+.btactive {
+  background: #ff4081;
+  color: white;
+}
+
+.example-icon {
+  padding: 0 14px;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.toolbar {
+  padding: 0 10vw;
+}
+main {
+  position: relative;
+}

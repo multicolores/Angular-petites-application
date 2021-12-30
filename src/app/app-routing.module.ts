@@ -6,10 +6,11 @@ import { HeroDetailComponent } from './project-container/hero-detail/hero-detail
 import {FilmDetailComponent} from './API/film-detail/film-detail.component'
 
 const routes: Routes = [
+  { path: 'heroes', component: HeroesComponent, data: { animation: 'heroes' }},
+  { path: 'films', component: FilmsComponent, data: { animation: 'films' } },
   { path: 'filmdetail/:id', component: FilmDetailComponent },
   { path: 'detail/:id', component: HeroDetailComponent },
-  { path: 'heroes', component: HeroesComponent },
-  { path: 'films', component: FilmsComponent },
+
 ];
 
 @NgModule({

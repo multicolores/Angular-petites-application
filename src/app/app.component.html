@@ -1,15 +1,27 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row class="toolbar">
+    <span routerLink="/">Petites applications avec Angular</span>
+    <span class="example-spacer"></span>
+    <button mat-button routerLinkActive="btactive" routerLink="/films">Film du studio Ghibli</button>
+    <button mat-button routerLinkActive="btactive" routerLink="/heroes">Tour of heroes</button>
+    <mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">favorite</mat-icon>
+  </mat-toolbar-row>
+</mat-toolbar>
 <nb-layout>
 
-  <nb-layout-header fixed>
+  <!-- <nb-layout-header fixed>
     <h1 routerLink="/">Petites application avec Angular</h1>
-  </nb-layout-header>
+  </nb-layout-header> -->
+
+
 
   <nb-layout-column>
 
-    <section>
+    <!-- <section>
       <h1 routerLinkActive="active" routerLink="/films">Film du studio Ghibli</h1>
-      <!-- <app-films></app-films> -->
-    </section>
+    </section> -->
+
+    <!-- <app-films></app-films> -->
 
 <!--     
     <section>
@@ -22,12 +34,13 @@
     </section> -->
 
 
-    <section routerLinkActive="active">
+    <!-- <section routerLinkActive="active">
       <app-project-container></app-project-container>
-    </section>
+    </section> -->
 
-
-    <router-outlet></router-outlet>
+    <main [@routeAnimations]="prepareRoute(outlet)" class="content">
+      <router-outlet #outlet="outlet"></router-outlet>
+    </main>
     
   </nb-layout-column>
 
